@@ -5,12 +5,14 @@ const RadioButtons = () => {
     <Div>
       <h2>Enter your details below</h2>
       <label htmlFor="metric">
-        <Radio about="false" type="radio" name="unit" id="metric" />
+        <input
+          about="false"
+          type="radio"
+          name="unit"
+          id="metric"
+          defaultChecked
+        />
         Metric
-      </label>
-      <label htmlFor="imperial">
-        <Radio about="true" type="radio" name="unit" id="imperial" />
-        Imperial
       </label>
     </Div>
   );
@@ -33,14 +35,10 @@ const Div = styled.div`
     line-height: 150%;
   }
   input {
-    width: 1.5rem;
-    height: 1.5rem;
-    /* appearance: none; */
-    background-color: #345ff6;
-    border-radius: 50%;
-    box-shadow: 0 0 0 8px #e1e7fe;
-    outline: 0.1rem solid #d8e2e7;
+    width: 2.5rem;
+    height: 2.5rem;
     margin-top: 4rem;
+    cursor: pointer;
   }
   label:first-of-type {
     margin: 0 7rem 0 1rem;
@@ -48,8 +46,4 @@ const Div = styled.div`
   input:first-of-type {
     margin-right: 3rem;
   }
-`;
-
-const Radio = styled.input`
-  appearance: ${(props) => (props.about ? "none" : "")} !important;
 `;

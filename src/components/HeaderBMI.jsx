@@ -37,5 +37,6 @@ const Header = styled.header`
     font-size: 1.6rem;
     line-height: 150%;
     font-weight: 400;
+    max-width: 70rem;
   }
 `;

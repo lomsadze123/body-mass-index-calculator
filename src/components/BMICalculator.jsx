@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 import HeaderBMI from "./HeaderBMI";
 import RadioButtons from "./RadioButtons";
 import BMIConverter from "./BMIConverter";
-import BMIResult from "./BMIResult";
 
 const MainBMI = () => {
   return (
@@ -11,7 +10,6 @@ const MainBMI = () => {
       <Main>
         <RadioButtons />
         <BMIConverter />
-        <BMIResult />
       </Main>
     </>
   );
